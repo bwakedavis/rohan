@@ -99,17 +99,5 @@ client.on('message', message => {
     }
   });
 
-  let channel  = client.channels.get("676029650270552074");// <-- your pre-filled channel variable
-
-channel.fetchMessages({ limit: 1 }).then(messages => {
-  let lastMessage = messages.first();
-
-  if (!lastMessage.author.bot) {
-    // The author of the last message wasn't a bot
-
-    console.log(messages)
-  }
-})
-.catch(console.error);
 
 client.login('Njc2MDI5NjUwMjcwNTUyMDc0.Xm6gjw.ZzXgPUX7JChraBLCT7dKCOzln3w');
