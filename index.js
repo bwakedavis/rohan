@@ -1,6 +1,8 @@
 const Discord = require('discord.js');
 const fs = require('fs')
 
+require('dotenv').config()
+
 const client = new Discord.Client();
 
 
@@ -100,4 +102,4 @@ client.on('message', message => {
   });
 
 
-client.login('');
+client.login(process.env.BOT_TOKEN);
